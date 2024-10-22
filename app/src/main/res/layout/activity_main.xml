@@ -7,34 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/main_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:gravity="center_horizontal">
-
-        <Button
-            android:id="@+id/Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="테스트 이미지 보기"
-            android:gravity="center"
-            android:layout_marginTop="20dp" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
-            android:visibility="invisible"
-            android:scaleType="fitCenter"
-            android:src="@drawable/testimage" />
-
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="이미지 표시" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
